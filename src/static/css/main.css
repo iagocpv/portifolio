@@ -1,0 +1,129 @@
+body {
+    color: black;
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-image: linear-gradient(to bottom right, rgb(184, 68, 230) , rgb(230, 159, 29));
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar {
+    background-color: rgb(35, 35, 35);
+    padding: 0.75em 1em;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    margin-top: 1em;
+    margin-bottom: 0.6em;
+    margin-left: 3em;
+    color: azure;
+    font-weight: lighter;
+}
+nav {
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+.logo img {
+    margin: 0 auto;
+}
+.proj-container {
+    color: whitesmoke;
+    margin: 1em auto;
+    width: 90%;
+}
+.proj-item {
+    padding: 0.5em 1em;
+    min-height: 650px;
+    background-color: rgba(54,54,54,0.1);
+    border-radius: 15px;
+    display: flex;
+    margin: 0.8em auto;
+}
+.proj-img {
+    background-color: rgba(54,54,54,0.5);
+    border-radius: 15px;
+    height: 600px;
+    width: 25%;
+    margin: 1em;    
+}
+.proj-text {
+    text-align: justify;
+    font-weight: lighter;
+    width: 75%;
+    line-height: 2;
+    margin-left: 1.5em;
+    margin-top: 0.5em;
+}
+.hero {
+    font-weight: lighter;
+    font-size: 2rem;
+    display: flex;
+    height: 820px;
+    width: 100%;
+    color: azure;
+}
+.hero-text {
+    width: 50%;
+    text-align: end;
+    margin: auto 0;
+    padding-right: 2em;
+    background-color: rgba(54,54,54,0.1);
+}
+.hero-img {
+    width: 50%;
+    background-color: rgba(54,54,54,0.5);
+}
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 3rem;
+    line-height: 0.8;
+    letter-spacing: 2px;
+}
+.dev {
+    font-style: italic;
+}
+.sobre-mim {
+    width: 90%;
+    margin: 2em auto;
+    color: azure;
+    font-weight: lighter;
+}
+.sobre-mim h3 {
+    text-align: left;
+}
+.sobre-container {
+    display: flex;
+    min-height: 400px;
+}
+.sobre-text {
+    width: 70%;
+    text-align: justify;
+}
+.sobre-text p {
+    padding-right: 5em;
+}
+.sobre-img {
+    background-color: rgba(54,54,54,0.5);
+    width: 30%;
+    margin: 0 auto;
+}

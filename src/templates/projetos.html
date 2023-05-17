@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="proj-container">
+    {% for projeto in projetos %}
+    <div class="proj-item">
+        <div class="proj-img"></div>
+        <div class="proj-text">
+            <h3>{{projeto}}</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, facilis.
+                    Tempora deleniti maxime sequi,<br> aliquam impedit nihil nisi voluptate quos et ratione odio necessitatibus amet praesentium autem alias sunt ipsam?</p>
+            <br>
+            <h4>http://github.com/projeto1</h4>
+            <br>
+            <h4>Tecnologias utilizadas:</h4>
+            <p>Python, HTML, CSS, ...</p>
+        </div>       
+    </div>
+    {% endfor%}     
+  <!--  <div class="proj-item">
+        <div class="proj-img"></div>
+        <div class="proj-text">
+            <h3>Projeto 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, facilis.
+                    Tempora deleniti maxime sequi,<br> aliquam impedit nihil nisi voluptate quos et ratione odio necessitatibus amet praesentium autem alias sunt ipsam?</p>
+            <br>
+            <h4>http://github.com/projeto2</h4>
+            <br>
+            <h4>Tecnologias utilizadas:</h4>
+            <p>Python, HTML, CSS, ...</p>
+        </div>            
+    </div> -->
+</div>
+{% endblock %}
