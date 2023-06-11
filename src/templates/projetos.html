@@ -4,31 +4,20 @@
 <div class="proj-container">
     {% for projeto in projetos %}
     <div class="proj-item">
-        <div class="proj-img"></div>
-        <div class="proj-text">
-            <h3>{{projeto}}</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, facilis.
-                    Tempora deleniti maxime sequi,<br> aliquam impedit nihil nisi voluptate quos et ratione odio necessitatibus amet praesentium autem alias sunt ipsam?</p>
-            <br>
-            <h4>http://github.com/projeto1</h4>
-            <br>
-            <h4>Tecnologias utilizadas:</h4>
-            <p>Python, HTML, CSS, ...</p>
-        </div>       
+        <h3>{{projeto['nome']}}</h3>
+        {% if projeto['img'] %}
+        <img src="{{ projeto['img'] }}" alt="" class="proj-img">
+        {% endif%}
+        <p class="desc">{{ projeto['desc']}}</p>
+        <div class="links">
+            {% if projeto['site'] %}
+            <a href="{{projeto['site']}}" target="_blank"><img src="../static/img/site-svgrepo-com.svg" alt="" class="icon-link"></a>
+            {% endif%}                
+            <a href="{{projeto['repo']}}" target="_blank"><img src="../static/img/github-142-svgrepo-com.svg" alt="" class="icon-link"></a>
+        </div>
+        <h4>Tecnologias utilizadas:</h4>
+        <p>{{ projeto['tech'] }}</p>  
     </div>
-    {% endfor%}     
-  <!--  <div class="proj-item">
-        <div class="proj-img"></div>
-        <div class="proj-text">
-            <h3>Projeto 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, facilis.
-                    Tempora deleniti maxime sequi,<br> aliquam impedit nihil nisi voluptate quos et ratione odio necessitatibus amet praesentium autem alias sunt ipsam?</p>
-            <br>
-            <h4>http://github.com/projeto2</h4>
-            <br>
-            <h4>Tecnologias utilizadas:</h4>
-            <p>Python, HTML, CSS, ...</p>
-        </div>            
-    </div> -->
+    {% endfor%}
 </div>
 {% endblock %}

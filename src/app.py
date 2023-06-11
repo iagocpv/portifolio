@@ -17,8 +17,16 @@ def sobreMim():
 
 @app.route('/projetos')
 def projetos():
-    projetos = ['Projeto 1', 'Projeto 2']
-    return render_template("projetos.html", title="Projetos", projetos = projetos)
+    projetos = [
+        {'nome': 'Planning Poker API (projeto futuro)',
+          'img': "/static/img/Planning Poker.png",
+           'desc': 'Plataforma online para realização de Planning Poker',
+           'site': '#',
+           'repo': '',
+           'tech': 'Python, Flask, HTML, CSS, Javascript'
+         },
+    ]
+    return render_template("projetos.html", title="Projetos", projetos=projetos)
 
 if __name__ == "__main__":
     app.run(debug=True)
