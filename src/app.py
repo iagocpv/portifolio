@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template("home.html", title="Home")
+    return render_template("index.html", title="Home")
 
 @app.route('/contato')
 def contato():
@@ -18,12 +18,12 @@ def sobreMim():
 @app.route('/projetos')
 def projetos():
     projetos = [
-        {'nome': 'Planning Poker API (projeto futuro)',
-          'img': "/static/img/Planning Poker.png",
-           'desc': 'Plataforma online para realização de Planning Poker',
+        {'nome': 'Covidinho (colaboração)',
+          'img': "/static/img/logo.png",
+           'desc': 'Plataforma online para visualização de dados sobre a Covid Longa no Vale do Paraíba',
            'site': '#',
-           'repo': '',
-           'tech': 'Python, Flask, HTML, CSS, Javascript'
+           'repo': 'https://github.com/Equipe-01-DSM-2023/API-2023.1',
+           'tech': 'Python, Flask, HTML, CSS, Javascript, MySQL', 
          },
     ]
     return render_template("projetos.html", title="Projetos", projetos=projetos)

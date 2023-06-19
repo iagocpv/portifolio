@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="main">
+    <div class="main-img">
+        <img src="/static/img/eu.png" alt="eu">        
+    </div>
+    <div class="main-text">
+        <div class="italico">Desenvolvedor back-end</div>
+        <h2>Iago Cardoso</h2>    
+    </div>
+    <div class="icons">
+        <a href="https://github.com/iagocpv/" target="_blank"><img src="../static/img/github-142-svgrepo-com.svg" alt="github"></a>
+        <a href="https://www.linkedin.com/in/iago-cardoso-315955194/" target="_blank"><img src="../static/img/linkedin-svgrepo-com.svg" alt="linkedin"></a>
+        <span id="copyEmail" onclick="navigator.clipboard.writeText('iago.portfolio@outlook.com');alert('Email copiado.')"><img src="../static/img/email-1572-svgrepo-com.svg" alt="email"></span>        
+    </div>
+</div>
+{% endblock %}
