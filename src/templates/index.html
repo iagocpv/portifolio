@@ -2,17 +2,20 @@
 
 {% block main %}
 <div class="main">
-    <div class="main-img">
-        <img src='{{ eu }}' alt="eu">   
-    </div>
+    <section class="hero">
+        <div class="hero-text">Olá, seja bem vindo(a) ao meu portfólio!</div>
+        <div class="main-img">
+            <img src='{{ eu }}' alt="eu">   
+        </div>
+    </section>
     <div class="main-text">
-        <div class="italico">Desenvolvedor back-end</div>
-        <h2>Iago Cardoso</h2>    
+        <div class="italico">Desenvolvedor Fullstack</div>
+        <h2>Iago Cardoso Souza</h2>    
     </div>
     <div class="icons">
         <a href="https://github.com/iagocpv/" target="_blank"><img src="../static/img/github-142-svgrepo-com.svg" alt="github"></a>
         <a href="https://www.linkedin.com/in/iago-cardoso-315955194/" target="_blank"><img src="../static/img/linkedin-svgrepo-com.svg" alt="linkedin"></a>
-        <span id="copyEmail" onclick="navigator.clipboard.writeText('iago.portfolio@outlook.com');alert('Email copiado.')"><img src="../static/img/email-1572-svgrepo-com.svg" alt="email"></span>        
+        <a href="mailto:iago.csouza16@gmail.com" target="_blank"><img src="../static/img/email-1572-svgrepo-com.svg" alt="email"></a>        
     </div>
 </div>
 {% endblock %}
